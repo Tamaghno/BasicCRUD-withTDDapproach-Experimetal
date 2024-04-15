@@ -1,0 +1,1 @@
+curl https://localhost:8080/flux/apistream/bankstream

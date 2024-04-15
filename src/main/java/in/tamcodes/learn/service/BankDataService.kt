@@ -10,5 +10,22 @@ class BankDataService(private val bankDataSource: BankDataSource) {
         return bankDataSource.retreiveBanks()
     }
 
+    fun getBank(accid : String) : Bank{
+       return bankDataSource.retreiveBank(accid)
+    }
+
+    fun addBank(bank: Bank) {
+        bankDataSource.addBank(bank)
+    }
+
+    fun modifyBank(bank: Bank) {
+        bankDataSource.modifyBank(bank)
+    }
+
+    fun removeBank(accId: String) {
+        bankDataSource.removeBank(accId)
+
+    }
+
 
 }
